@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Blair Nimmo : S1802408 -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#858CB3"
+        android:backgroundTint="#613951AA"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Traffic Scotland Application for Mobile Platform Development."
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This application contains live data from the Traffic Scotland RSS feed. "
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/incidents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:fontFamily="serif"
+            android:text="Current Incidents"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/roadworks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:fontFamily="serif"
+            android:text="Ongoing Roadworks"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/plannedRoadworks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:fontFamily="serif"
+            android:text="Planned Roadworks"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:ems="10"
+            android:hint="Search by entering a specific location..."
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/urlInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>
